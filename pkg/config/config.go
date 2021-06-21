@@ -1017,6 +1017,10 @@ func (c *RuntimeConfig) Devices() []device.Device {
 	return c.deviceConfig.Devices()
 }
 
+func (c *RuntimeConfig) CDIDevices() []string {
+	return c.deviceConfig.CDIDevices()
+}
+
 func validateExecutablePath(executable, currentPath string) (string, error) {
 	if currentPath == "" {
 		path, err := exec.LookPath(executable)

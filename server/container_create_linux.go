@@ -11,6 +11,7 @@ import (
 	"syscall"
 	"time"
 
+	cdi "github.com/container-orchestrated-devices/container-device-interface/pkg"
 	"github.com/containers/buildah/pkg/secrets"
 	"github.com/containers/buildah/util"
 	"github.com/containers/podman/v3/pkg/rootless"
@@ -277,13 +278,22 @@ func (s *Server) createSandboxContainer(ctx context.Context, ctr ctrIface.Contai
 		return nil, err
 	}
 
-	annotationDevices, err := device.DevicesFromAnnotation(sb.Annotations()[crioann.DevicesAnnotation])
+	annotationDevices, cdiAnnotationDevices, err := device.DevicesFromAnnotation(sb.Annotations()[crioann.DevicesAnnotation])
 	if err != nil {
 		return nil, err
 	}
 
 	if err := ctr.SpecAddDevices(configuredDevices, annotationDevices, privilegedWithoutHostDevices); err != nil {
 		return nil, err
+	}
+
+	cdiDevices := s.config.CDIDevices()
+	cdiDevices = append(cdiDevices, cdiAnnotationDevices...)
+
+	if len(cdiDevices) > 0 {
+		if err = cdi.UpdateOCISpecForDevices(ctr.Spec().Config, cdiDevices); err != nil {
+			return nil, errors.Wrapf(err, "error setting up CDI devices")
+		}
 	}
 
 	labels := containerConfig.Labels

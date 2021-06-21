@@ -108,6 +108,10 @@ github.com/cilium/ebpf/internal
 github.com/cilium/ebpf/internal/btf
 github.com/cilium/ebpf/internal/unix
 github.com/cilium/ebpf/link
+# github.com/container-orchestrated-devices/container-device-interface v0.0.0-20210503181027-39f82fff3363
+## explicit
+github.com/container-orchestrated-devices/container-device-interface/pkg
+github.com/container-orchestrated-devices/container-device-interface/specs-go
 # github.com/containerd/cgroups v1.0.1
 ## explicit
 github.com/containerd/cgroups/stats/v1
