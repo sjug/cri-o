@@ -56,7 +56,7 @@ require (
 	github.com/vishvananda/netlink v1.1.1-0.20201029203352-d40f9887b852
 	golang.org/x/net v0.0.0-20210428140749-89ef3d95e781
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	golang.org/x/sys v0.0.0-20210603125802-9665404d3644
+	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22
 	google.golang.org/grpc v1.38.0
 	k8s.io/api v0.21.1
 	k8s.io/apimachinery v0.21.2
@@ -65,9 +65,9 @@ require (
 	k8s.io/klog/v2 v2.9.0
 	k8s.io/kubernetes v1.21.1
 	k8s.io/release v0.8.0
-	k8s.io/utils v0.0.0-20210305010621-2afb4311ab10
+	k8s.io/utils v0.0.0-20211116205334-6203023598ed
 	mvdan.cc/sh/v3 v3.3.0
-	sigs.k8s.io/release-utils v0.2.1
+	sigs.k8s.io/release-utils v0.4.0
 	sigs.k8s.io/zeitgeist v0.3.0
 )
 

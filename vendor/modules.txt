@@ -1,4 +1,4 @@
-# github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78
+# github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1
 github.com/Azure/go-ansiterm
 github.com/Azure/go-ansiterm/winterm
 # github.com/BurntSushi/toml v0.3.1
@@ -692,7 +692,7 @@ github.com/moby/spdystream/spdy
 github.com/moby/sys/mount
 # github.com/moby/sys/mountinfo v0.4.1
 github.com/moby/sys/mountinfo
-# github.com/moby/term v0.0.0-20201216013528-df9cb8a40635
+# github.com/moby/term v0.0.0-20210619224110-3f7ff695adc6
 github.com/moby/term
 github.com/moby/term/windows
 # github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
@@ -989,7 +989,7 @@ golang.org/x/oauth2/internal
 ## explicit
 golang.org/x/sync/errgroup
 golang.org/x/sync/semaphore
-# golang.org/x/sys v0.0.0-20210603125802-9665404d3644
+# golang.org/x/sys v0.0.0-20210616094352-59db8d763f22
 ## explicit
 golang.org/x/sys/cpu
 golang.org/x/sys/execabs
@@ -1521,11 +1521,12 @@ k8s.io/release/pkg/notes/options
 k8s.io/release/pkg/object
 k8s.io/release/pkg/release
 k8s.io/release/pkg/release/regex
-# k8s.io/utils v0.0.0-20210305010621-2afb4311ab10
+# k8s.io/utils v0.0.0-20211116205334-6203023598ed
 ## explicit
 k8s.io/utils/buffer
 k8s.io/utils/exec
 k8s.io/utils/integer
+k8s.io/utils/internal/third_party/forked/golang/net
 k8s.io/utils/io
 k8s.io/utils/keymutex
 k8s.io/utils/net
@@ -1541,7 +1542,7 @@ mvdan.cc/sh/v3/fileutil
 mvdan.cc/sh/v3/syntax
 # sigs.k8s.io/mdtoc v1.0.1
 sigs.k8s.io/mdtoc/pkg/mdtoc
-# sigs.k8s.io/release-utils v0.2.1
+# sigs.k8s.io/release-utils v0.4.0
 ## explicit
 sigs.k8s.io/release-utils/command
 sigs.k8s.io/release-utils/env
