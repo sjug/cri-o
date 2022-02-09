@@ -27,16 +27,16 @@ require (
 	github.com/docker/distribution v2.7.1+incompatible
 	github.com/docker/go-units v0.4.0
 	github.com/emicklei/go-restful v2.15.0+incompatible
-	github.com/fsnotify/fsnotify v1.4.9
+	github.com/fsnotify/fsnotify v1.5.1
 	github.com/go-logr/logr v0.4.0
 	github.com/go-zoo/bone v1.3.0
 	github.com/godbus/dbus/v5 v5.0.4
 	github.com/gogo/protobuf v1.3.2
-	github.com/golang/mock v1.5.0
+	github.com/golang/mock v1.6.0
 	github.com/google/renameio v1.0.1
 	github.com/google/uuid v1.2.0
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
-	github.com/json-iterator/go v1.1.11
+	github.com/json-iterator/go v1.1.12
 	github.com/onsi/ginkgo v1.16.4
 	github.com/onsi/gomega v1.13.0
 	github.com/opencontainers/go-digest v1.0.0
@@ -54,10 +54,10 @@ require (
 	github.com/syndtr/gocapability v0.0.0-20200815063812-42c35b437635
 	github.com/urfave/cli/v2 v2.3.0
 	github.com/vishvananda/netlink v1.1.1-0.20201029203352-d40f9887b852
-	golang.org/x/net v0.0.0-20210428140749-89ef3d95e781
+	golang.org/x/net v0.0.0-20210813160813-60bc85c4be6d
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	golang.org/x/sys v0.0.0-20210603125802-9665404d3644
-	google.golang.org/grpc v1.38.0
+	golang.org/x/sys v0.0.0-20211205182925-97ca703d548d
+	google.golang.org/grpc v1.42.0
 	k8s.io/api v0.21.1
 	k8s.io/apimachinery v0.21.2
 	k8s.io/client-go v0.21.1
@@ -65,9 +65,9 @@ require (
 	k8s.io/klog/v2 v2.9.0
 	k8s.io/kubernetes v1.21.1
 	k8s.io/release v0.8.0
-	k8s.io/utils v0.0.0-20210305010621-2afb4311ab10
+	k8s.io/utils v0.0.0-20211116205334-6203023598ed
 	mvdan.cc/sh/v3 v3.3.0
-	sigs.k8s.io/release-utils v0.2.1
+	sigs.k8s.io/release-utils v0.5.0
 	sigs.k8s.io/zeitgeist v0.3.0
 )
 
